@@ -20,3 +20,7 @@ const duplicates = (array) =>
 }
 
 console.log(duplicates([1,3,4,5,5,5,2,1]))
+
+// remove duplicates from an array
+
+const removeDuplicates = array => [...new Set(array)]
