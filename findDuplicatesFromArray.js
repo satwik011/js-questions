@@ -24,3 +24,18 @@ console.log(duplicates([1,3,4,5,5,5,2,1]))
 // remove duplicates from an array
 
 const removeDuplicates = array => [...new Set(array)]
+
+// remove duplicate from string
+
+const removeDuplicateFromString = a=>{
+  let result = ""
+  for (let x of a)
+  {
+    if(!result.includes(x))
+    {
+      result+=x
+    }
+  }
+  return result
+}
+console.log(removeDuplicateFromString("aavbnnnnm"))
